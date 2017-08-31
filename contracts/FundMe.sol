@@ -19,8 +19,8 @@ contract FundMe {
 	}
 
 	//Meta Campaign details
-	mapping (uint => Campaign) campaigns;
-	uint numCampaigns;
+	mapping (uint => Campaign) public campaigns;
+	uint public numCampaigns;
 
 	//Create new campaign
 	function newCampaign(address _campaignAddress, uint _fundingGoal, uint _deadlineDate) returns (uint campaignID) {
@@ -77,5 +77,10 @@ contract FundMe {
 		}
 		return false;
 	}	
+
+	//Get individual funder contributions
+	function campaign_funder(uint _campaignID, uint _funderID) constant returns (address, uint) {
+	    return (campaigns[_campaignID].funders[_funderID].funderAddress, campaigns[_campaignID].funders[_funderID].fundAmount);
+	}
 
 }

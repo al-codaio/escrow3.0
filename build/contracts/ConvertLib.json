@@ -1,0 +1,86 @@
+{
+  "contract_name": "ConvertLib",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "name": "conversionRate",
+          "type": "uint256"
+        }
+      ],
+      "name": "convert",
+      "outputs": [
+        {
+          "name": "convertedAmount",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x60606040523415600e57600080fd5b5b60908061001d6000396000f300606060405263ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166396e4ee3d8114603c575b600080fd5b6048600435602435605a565b60405190815260200160405180910390f35b8181025b929150505600a165627a7a723058202a48094ec2a985dd14bfbec426af2404ee9a9cd4346cee74f91a764d451cffb90029",
+  "networks": {
+    "1503768112892": {
+      "events": {},
+      "links": {},
+      "address": "0xfffe5439bb37177a8eac956fb3612208432642d5",
+      "updated_at": 1503925420262
+    },
+    "1504039215565": {
+      "events": {},
+      "links": {},
+      "address": "0x2d12583936d6ff16deacbcb7911e2853e88ee7ce",
+      "updated_at": 1504039233623
+    },
+    "1504041293479": {
+      "events": {},
+      "links": {},
+      "address": "0xd62386e5659421a6dc9b0e8aefe7d266b5ad7219",
+      "updated_at": 1504041309356
+    },
+    "1504125604769": {
+      "events": {},
+      "links": {},
+      "address": "0x13bb4e7a1cdbb3efd9c677af073badf24f0f8642",
+      "updated_at": 1504126289105
+    },
+    "1504215497982": {
+      "events": {},
+      "links": {},
+      "address": "0x670492be79070c686b765e7240cd006a51776c13",
+      "updated_at": 1504215538037
+    },
+    "1504216988071": {
+      "events": {},
+      "links": {},
+      "address": "0x10a1366ab938880ec3536e254e1e86f3bf52faf6",
+      "updated_at": 1504217008042
+    },
+    "1504217756108": {
+      "events": {},
+      "links": {},
+      "address": "0xb154c10556bfe261b73981ffb84edaf7d62ecde9",
+      "updated_at": 1504217770682
+    },
+    "1504217911427": {
+      "events": {},
+      "links": {},
+      "address": "0x60ecdb3d01d4630e83d1f36f4827f77625f2d816",
+      "updated_at": 1504217957744
+    },
+    "1504218084199": {
+      "events": {},
+      "links": {},
+      "address": "0x57f2823780c5328c89052e8ffbb2c510816c6b4b",
+      "updated_at": 1504218134430
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1504218134430
+}
