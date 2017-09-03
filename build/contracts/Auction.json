@@ -1,8 +1,155 @@
 {
   "contract_name": "Auction",
-  "abi": [],
-  "unlinked_binary": "0x60606040523415600e57600080fd5b5b603680601c6000396000f30060606040525b600080fd00a165627a7a72305820d77d55dc6cf51bb8712d75e49a36559c320759aa5454e8f66d306f45fd3263e60029",
-  "networks": {},
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_timeLimit",
+          "type": "uint256"
+        }
+      ],
+      "name": "startAuction",
+      "outputs": [
+        {
+          "name": "_auctionID",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_ID",
+          "type": "uint256"
+        }
+      ],
+      "name": "bid",
+      "outputs": [
+        {
+          "name": "_highestBidder",
+          "type": "address"
+        }
+      ],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "numAuctions",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_ID",
+          "type": "uint256"
+        }
+      ],
+      "name": "endAuction",
+      "outputs": [
+        {
+          "name": "_highestBidder",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "Auctions",
+      "outputs": [
+        {
+          "name": "deadlineDate",
+          "type": "uint256"
+        },
+        {
+          "name": "highestBid",
+          "type": "uint256"
+        },
+        {
+          "name": "highestBidder",
+          "type": "address"
+        },
+        {
+          "name": "bidReceiver",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b6103918061001f6000396000f300606060405263ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663065de74c8114610069578063454a2ab3146100915780635c113acc146100b8578063b9a2de3a146100dd578063e8cd181f1461010f575b600080fd5b341561007457600080fd5b61007f60043561015b565b60405190815260200160405180910390f35b61009c6004356101a7565b604051600160a060020a03909116815260200160405180910390f35b34156100c357600080fd5b61007f610297565b60405190815260200160405180910390f35b34156100e857600080fd5b61009c60043561029d565b604051600160a060020a03909116815260200160405180910390f35b341561011a57600080fd5b610125600435610331565b6040519384526020840192909252600160a060020a03908116604080850191909152911660608301526080909101905180910390f35b6001805480820190915560008181526020819052604090204383018155600301805473ffffffffffffffffffffffffffffffffffffffff191633600160a060020a03161790555b919050565b6000818152602081905260408120600181015434600a90910160121811806101d0575080544390115b1561021c57600160a060020a0333163480156108fc0290604051600060405180830381858888f19350505050151561020757600080fd5b6002810154600160a060020a03169150610291565b60028101546001820154600160a060020a039091169080156108fc0290604051600060405180830381858888f19350505050151561025957600080fd5b60028101805473ffffffffffffffffffffffffffffffffffffffff191633600160a060020a0381169190911790915534600183015591505b50919050565b60015481565b6000818152602081905260408120805443106102915760038101546001820154600160a060020a039091169080156108fc0290604051600060405180830381858888f1935050505015156102f057600080fd5b60006001820181905560028201805473ffffffffffffffffffffffffffffffffffffffff1990811690915590825560038201805490911690555b5b50919050565b600060208190529081526040902080546001820154600283015460039093015491929091600160a060020a039182169116845600a165627a7a72305820f1277ab9229ba4ea9f4a9d1f5ad64656613b0831af2e3435dd0f66045bfef46a0029",
+  "networks": {
+    "1504474925014": {
+      "events": {},
+      "links": {},
+      "address": "0x8353c55615d8f6e6a5c262e3abdfff6c0706e171",
+      "updated_at": 1504474938353
+    },
+    "1504475054164": {
+      "events": {},
+      "links": {},
+      "address": "0x3e887f6e37dec91e5c77aa5966bc19a742f9064f",
+      "updated_at": 1504475056635
+    },
+    "1504480056965": {
+      "events": {},
+      "links": {},
+      "address": "0xcfe8d510be14cafa03dcc11c802b675fde1fd4ee",
+      "updated_at": 1504480066017
+    },
+    "1504480600359": {
+      "events": {},
+      "links": {},
+      "address": "0x93b6c0457b03c1cdfb81d244db5f9d5173125351",
+      "updated_at": 1504480616133
+    },
+    "1504481086242": {
+      "events": {},
+      "links": {},
+      "address": "0x117eef08c951757e2800542ceaf0195ec7be1bd2",
+      "updated_at": 1504481096638
+    },
+    "1504481145492": {
+      "events": {},
+      "links": {},
+      "address": "0xa1c387333938010fd0e5b671fc4a8b6b5662510a",
+      "updated_at": 1504481155707
+    },
+    "1504481436772": {
+      "events": {},
+      "links": {},
+      "address": "0x1b809012c058b32cd523300e2f07a3ed8e616f7d",
+      "updated_at": 1504481534354
+    },
+    "1504482689650": {
+      "events": {},
+      "links": {},
+      "address": "0x9d3e4e334cdfeaa5e9599fbb96583325b0c6379e",
+      "updated_at": 1504482708963
+    }
+  },
   "schema_version": "0.0.5",
-  "updated_at": 1503890259600
+  "updated_at": 1504482708963
 }
